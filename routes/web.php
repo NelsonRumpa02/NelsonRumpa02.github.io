@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('login');
 });
 
 Route::get('/connect', function () {
@@ -21,6 +21,7 @@ Route::get('/connect', function () {
 
 
 Route::group(['middleware' => ['auth']], function () {
+    
 Route::get('/mahasiswa', 'MahasiswaController@mahasiswa');
 
 Route::get('/mahasiswa/cari', 'MahasiswaController@pencarian');
