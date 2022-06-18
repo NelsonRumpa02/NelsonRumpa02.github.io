@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>Data Pengguna</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -20,9 +20,9 @@
                   <i class="bi bi-person-circle"></i> User
                 </button>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">Nelson Rumpa</a>
-                  <a class="dropdown-item" href="/user">Data Pengguna</a>
-                  <a class="dropdown-item" href="#">Logout</a>
+                  <a class="dropdown-item" href="/mahasiswa">{{Auth::User()->nama_user ?? ''}}</a>
+                  <a class="dropdown-item" href="#">Data Pengguna</a>
+                  <a class="dropdown-item" href="/logout">Logout</a>
                 </div>
               </div>
             </div>
